@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, ,user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设备报修</title>
+    <link rel="stylesheet" href="../css/Mdate.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/EquipmentRepair.css">
+</head>
+
+<body>
+    <form action="" method="post">
+
+        <nav>
+            <ul>
+                <li>
+                    设备编号：
+                    <p>E01</p>
+                </li>
+                <li>
+                    设备名称：
+                    <p>QGQEY全自动四头二元灌液机</p>
+                </li>
+                <li>
+                    设备型号：
+                    <p>XC250</p>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <ul>
+                <li>
+                    <p>报修类型：</p>
+                    <select name="ReportRepair" autocomplete="off">
+                        <option>美容/美发</option>
+                        <option>生活/家政服务</option>
+                        <option>运动/健康</option>
+                    </select>
+                </li>
+                <li>
+                    <p>维修类型：</p>
+                    <select name="Repair" autocomplete="off">
+                        <option>美容/美发</option>
+                        <option>生活/家政服务</option>
+                        <option>运动/健康</option>
+                    </select>
+                </li>
+                <li>
+                    <p>故障时间：</p>
+                    <input name="downTime" onfocus="this.blur()" id="dateSelectorOne" id="dateSelectorTwo" type="text">
+                </li>
+                <li>
+                    <p>故障级别：</p>
+                    <select name="FaultLevel" autocomplete="off">
+                        <option>美容/美发</option>
+                        <option>生活/家政服务</option>
+                        <option>运动/健康</option>
+                    </select>
+                </li>
+                <li>
+                    <p>故障描述：</p>
+                    <textarea name="FaultDescription" oninput="autoTextAreaHeight(this)" name="" id="txt_description" cols="22" rows="4" th:text="${userInfo?.personInfo}"></textarea>
+                </li>
+                <li>
+                    <p>故障图片：</p>
+                    <ul class="imgWarp" onclick="">
+                        <li class="addImg" id="zengjiatupian">
+                            <img class="add" src="../img/add.png" alt="添加" />
+                            <p>点击添加图片</p>
+                        </li>
+                        <li class="addImg">
+                            <img class="close" src="../img/close.svg" alt="关闭" />
+                            <img class="imageList" src="../img/head.jpg" alt="图片展示" />
+                        </li>
+                        <li class="addImg">
+                            <img class="close" src="../img/close.svg" alt="关闭" />
+                            <img class="imageList" src="../img/head.jpg" alt="图片展示" />
+                        </li>
+                        <li class="addImg">
+                            <img class="close" src="../img/close.svg" alt="关闭" />
+                            <img class="imageList" src="../img/head.jpg" alt="图片展示" />
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li class="submit">
+                    <button type="submit">确认提交</button>
+
+                </li>
+            </ul>
+        </main>
+
+</body>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<!-- <script src="../js/homePage.js"></script> -->
+<script src="../js/iScroll.js"></script>
+<script src="../js/Mdate.js"></script>
+
+<script type="text/javascript">
+    // new Mdate("dateSelectorOne");
+    new Mdate("dateSelectorOne", {
+        acceptId: "dateSelectorTwo",
+        beginYear: "2016 ",
+        beginMonth: "",
+        beginDay: "",
+        endYear: "",
+        endMonth: "",
+        endDay: "",
+        format: "/"
+    });
+</script>
+
+</html>

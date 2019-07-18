@@ -1,0 +1,50 @@
+body {
+    background-color: #eeeeee;
+}
+
+main>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main>ul>li {
+    width: 44%;
+    height: 140px;
+    margin-top: 17px;
+    vertical-align: top;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main>ul>li:nth-child(odd) {
+    margin-right: 17px;
+}
+
+main>ul>li>img {
+    width: 40px;
+    height: 40px;
+}
+
+.imgbig {
+    width: 45px;
+    height: 40px;
+}
+
+main>ul>li>h3 {
+    margin-top: 3px;
+    font-weight: 500;
+    color: rgb(45, 45, 45);
+    font-size: 14px;
+}
+
+main>ul>li>p {
+    color: rgb(155, 155, 155);
+    font-size: 14px;
+    line-height: 1.3;
+}
