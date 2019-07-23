@@ -6,104 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, ,user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>维修待验证状态</title>
+    <title>维保工单已完成</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/StatusVerified.css">
+    <link rel="stylesheet" href="../css/Completed.css">
 </head>
 
 <body>
     <form action="" method="post">
-        <nav>
-            <img src="../img/head.jpg" alt="设备图片">
-        </nav>
         <main>
-
             <ul>
                 <li>
-                    <img src="../img/shebei.png" alt="设备信息">
-                    <span>设备信息</span>
+                    <img src="../img/jibenxinxi.png" alt="基本信息">
+                    <span>基本信息</span>
                 </li>
-
                 <li>
-                    <h3>设备编号：</h3>
+                    <h3>工单号：</h3>
                     <p>A0001</p>
                 </li>
-
                 <li>
-
-                    <h3>设备型号：</h3>
+                    <h3>设备编号：</h3>
                     <p>XC250</p>
                 </li>
                 <li>
                     <h3>设备名称：</h3>
                     <p>小磨床</p>
                 </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="../img/guzhang.png" alt="故障信息">
-                    <span>故障信息</span>
-                </li>
+
 
                 <li>
-                    <h3>工单号：</h3>
-                    <p>A0001</p>
+                    <h3>保养类型：</h3>
+                    <p>xvxxx</p>
                 </li>
 
                 <li>
 
-                    <h3>报修类型：</h3>
-                    <p>小磨床</p>
+                    <h3>任务生成时间：</h3>
+                    <p>xxxxxx</p>
                 </li>
                 <li>
-                    <h3>维修类型：</h3>
-                    <p>XC250</p>
+                    <h3>预计完成时间：</h3>
+                    <p>xxxxxx</p>
                 </li>
                 <li>
-                    <h3>故障时间：</h3>
-                    <p>2019/07/06</p>
+                    <h3>保养时长：</h3>
+                    <p>8h</p>
                 </li>
                 <li>
-                    <h3>故障级别：</h3>
-                    <p>小磨床</p>
-                </li>
-                <li>
-                    <h3>故障描述：</h3>
-                    <p>小磨床</p>
-                </li>
-                <li>
-                    <h3>故障状态：</h3>
-                    <p>小磨床</p>
-                </li>
-                <li>
-                    <h3>故障图片：</h3>
-                    <div class="FaultPicture">
-                        <img src="../img/head.jpg" alt="故障图片">
-                    </div>
+                    <h3>任务状态：</h3>
+                    <p>待执行</p>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <img src="../img/weixiu.png" alt="维修信息">
-                    <span>维修信息</span>
+                    <img src="../img/baoyangxinxi.png" alt="保养信息">
+                    <span>保养信息</span>
                 </li>
-
-                <li>
-                    <h3>故障原因：</h3>
-                    <p>A0001</p>
-                </li>
-
-                <li>
-
-                    <h3>故障类型：</h3>
-                    <p>XC250</p>
-                </li>
-                <li>
-                    <h3>维修内容：</h3>
-                    <p>小磨床</p>
-                </li>
-                <li>
-                    <h3>消耗备件：</h3>
+                <div class="maintain">
+                    <h3>保养预算：</h3>
+                    <p>xxxxx</p>
+                </div>
+                <div class="maintaincont">
+                    <h3>保养内容：</h3>
                     <table>
                         <colgroup>
                             <col width="25%">
@@ -113,9 +76,9 @@
 
                         <thead>
                             <tr>
-                                <th>备件名称</th>
-                                <th>备件类型</th>
-                                <th>使用数量</th>
+                                <th>保养项目</th>
+                                <th>项目内容</th>
+                                <th>项目费用</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -146,37 +109,40 @@
                             </tr>
                         </tbody>
                     </table>
-                </li>
+                </div>
+
+
+
+
             </ul>
             <ul>
                 <li>
-                    <img src="../img/yanzheng.png" alt="验证信息">
-                    <span>验证信息</span>
+                    <img src="../img/zhixingxinxi.png" alt="实际执行信息">
+                    <span>实际执行信息</span>
                 </li>
 
                 <li>
-                    <h3>验证时间：</h3>
-                    <p>A0001</p>
+                    <h3>执行人：</h3>
+                    <p>xxxxx</p>
                 </li>
 
                 <li>
 
-                    <h3>验证人：</h3>
-                    <p>XC250</p>
+                    <h3>实际开始时间：</h3>
+                    <p>xxxxxx</p>
                 </li>
                 <li>
-                    <h3>验证结果：</h3>
-                    <p>小磨床</p>
+                    <h3>实际完成时间：</h3>
+                    <p>xxxxx</p>
                 </li>
                 <li>
-                    <h3>说明：</h3>
-                    <p>小磨床</p>
+                    <h3>保养费用：</h3>
+                    <p>xxxxx</p>
                 </li>
             </ul>
         </main>
 
 </body>
 <script src="../js/jquery-3.3.1.min.js"></script>
-
 
 </html>

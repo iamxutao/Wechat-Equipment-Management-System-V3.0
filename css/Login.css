@@ -1,0 +1,66 @@
+body {
+    background-image: url(../img/beijing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 15%;
+}
+
+form {
+    width: calc(100% - 30px);
+    margin: 150px auto 0 auto;
+}
+
+main {
+    background-color: #fff;
+    height: 250px;
+    border-radius: 6px;
+}
+
+main>ul {
+    width: calc(100% - 80px);
+    margin: auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+main>ul>li {
+    border-bottom: #e2e2e3 solid 1px;
+    margin-top: 25px;
+}
+
+main>ul>li>img {
+    width: 16px;
+    margin-right: 12px;
+}
+
+input::placeholder {
+    color: #b5b5b5;
+}
+
+input {
+    width: calc(100% - 33px);
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.submit {
+    width: 100%;
+}
+
+.submit>button {
+    outline: none;
+    border: none;
+    display: block;
+    width: calc(100% - 30px);
+    height: 54px;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgb(22, 155, 214);
+    border-top-left-radius: 54px;
+    border-bottom-left-radius: 54px;
+    border-top-right-radius: 54px;
+    border-bottom-right-radius: 54px;
+    margin: auto;
+    margin-top: 50px;
+}

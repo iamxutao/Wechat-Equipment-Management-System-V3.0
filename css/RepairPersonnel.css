@@ -1,0 +1,38 @@
+body {
+    background: #eaeaea;
+    padding: 17px 14px 50px 14px;
+}
+
+table {
+    background: #fff;
+    width: 100%;
+}
+
+table tr>th {
+    width: 20%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    word-break: break-all;
+}
+
+table tr>th:last-child {
+    color: rgb(22, 155, 213)
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+}
+
+table>thead>tr {
+    background-color: #fff !important;
+}
+
+table>thead>tr>th {
+    font-size: 14px;
+    color: rgb(42, 42, 42)
+}
+
+table>tbody>tr>th {
+    font-size: 12px;
+    color: rgb(114, 113, 113)
+}
