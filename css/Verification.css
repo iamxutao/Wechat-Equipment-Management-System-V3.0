@@ -174,7 +174,8 @@ main>ul:last-child {
     height: 45px;
 }
 
-.popup {
+
+/* .popup {
     width: 100vw;
     height: 100vh;
     background: #000;
@@ -188,7 +189,6 @@ main>ul:last-child {
 .content {
     position: fixed;
     top: 30vh;
-    margin: auto;
     background: #fff;
     z-index: 999;
     width: 90%;
@@ -253,12 +253,13 @@ main>ul:last-child {
     background: #b6bece;
 }
 
-.win>div {
+.win>form>div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+*/
 
 .win {
     display: none;
